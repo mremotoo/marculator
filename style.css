@@ -1,0 +1,24 @@
+body {
+    background-color: rgba(181, 214, 204, 0.548);
+}
+
+.calcContainer {
+    background-color: brown;
+    max-width: 17em;
+    margin: 15em auto;
+    text-align: center;
+}
+
+.calcContainer div {
+    background-color: rgb(209 209 209);
+    margin: auto;
+    padding: 21px;
+    max-width: 223px;
+    text-align: right;
+    font-size: xxx-large;
+}
+
+.calcContainer button {
+    width: 5em;
+    height: 5em;
+}

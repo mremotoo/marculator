@@ -17,3 +17,23 @@ const operate = (num1, num2, operator) => {
         divideNum(num1, num2)
     }
 }
+
+const btnDiv = document.querySelector(".calcContainer")
+
+//display
+const display = document.createElement("div")
+display.textContent = 0
+btnDiv.appendChild(display)
+
+//keys
+const btnText = ["7", "8", "9", "x",
+                 "4", "5", "6", "-", 
+                 "1", "2", "3", "+",
+                 "C", "0", ".", "/"]
+
+for (let i = 0; i < 16; i++) {
+    const keys = document.createElement("button")
+    keys.textContent = btnText[i]
+    btnDiv.appendChild(keys)
+}
+    
