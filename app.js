@@ -18,22 +18,34 @@ const operate = (num1, num2, operator) => {
     }
 }
 
-const btnDiv = document.querySelector(".calcContainer")
+const appDiv = document.querySelector(".calcContainer")
 
 //display
 const display = document.createElement("div")
 display.textContent = 0
-btnDiv.appendChild(display)
+appDiv.appendChild(display)
 
 //keys
 const btnText = ["7", "8", "9", "x",
                  "4", "5", "6", "-", 
                  "1", "2", "3", "+",
-                 "C", "0", ".", "/"]
-
+                 "C", "0", "=", "/"]
+//populate div with buttons and texts
 for (let i = 0; i < 16; i++) {
     const keys = document.createElement("button")
     keys.textContent = btnText[i]
-    btnDiv.appendChild(keys)
+    appDiv.appendChild(keys)
 }
+
+//populate the display when buttons are clicked
+const calcDiv = document.querySelectorAll(".calcContainer")
+calcDiv.forEach(button => button.addEventListener("click", displayNum))
+
+function displayNum(e) {
+    console.log(e);
+    let addDisplay = e.target.innerText
+    display.append(addDisplay)
     
+    const currentDisplay = display.textContent
+    console.log(currentDisplay);
+}

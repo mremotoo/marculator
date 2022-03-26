@@ -5,17 +5,18 @@ body {
 .calcContainer {
     background-color: brown;
     max-width: 17em;
-    margin: 15em auto;
+    margin: 5em auto;
     text-align: center;
 }
 
 .calcContainer div {
     background-color: rgb(209 209 209);
     margin: auto;
+    margin-bottom: 2px;
     padding: 21px;
     max-width: 223px;
     text-align: right;
-    font-size: xxx-large;
+    font-size: xx-large;
 }
 
 .calcContainer button {
